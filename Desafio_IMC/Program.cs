@@ -12,6 +12,7 @@ namespace Desafio_IMC
             string sexo = "";
             bool sexoEhValido = false;
             int idade;
+            double altura;
 
             #region Cabeçalho do programa
             Console.WriteLine("**************************");
@@ -47,12 +48,10 @@ namespace Desafio_IMC
             //Faz a chamada do método ['VerificaIdade'] para o método ['Main'] fazendo com que a mensagem abaixo apareça para o usuário 
             idade = VerificaIdade("\nInforme sua idade: ");
 
-            //Console.WriteLine("Nome: "+nome);
+            //Faz a chamada do método ['VerificaAltura'] para o método ['Main'] 
+            altura = VerificaAltura("\nInforme sua altura em metros: ");
 
-            /*Console.Write("\nDigite sua altura em metros: ");
-            double altura = double.Parse(Console.ReadLine());
-
-            Console.Write("\nInforme seu peso em kg: ");
+            /*Console.Write("\nInforme seu peso em kg: ");
             double peso = double.Parse(Console.ReadLine());
 
             imc = peso / Math.Pow(altura,2);*/
@@ -68,6 +67,8 @@ namespace Desafio_IMC
             else Console.WriteLine("Valor inválido");*/
 
         }
+        
+        #region Método VerificaIdade
         static int VerificaIdade(string msg) //Método criado para ler a idade do usuário e verificar se é um valor válido
         {
             bool idadeEhvalida = false;
@@ -81,6 +82,18 @@ namespace Desafio_IMC
                     Console.WriteLine("Valor inválido!\nInforme sua idade em anos, sem pontos ou vírgulas");
             } while (!idadeEhvalida || ValidaIdadeInformada < 0);
             return ValidaIdadeInformada;
+        }
+        #endregion
+        static double VerificaAltura(string msg)
+        {
+            bool alturaEhvalida = false;
+            double AlturaInformada = 0;
+            do
+            {
+                Console.Write(msg);
+                alturaEhvalida = double.TryParse(Console.ReadLine().Replace(",", ".").ToString(CultureInfo.GetCultureInfo("pt-br")), out AlturaInformada);
+            } while (!alturaEhvalida);
+            return AlturaInformada;
         }
     }
 }

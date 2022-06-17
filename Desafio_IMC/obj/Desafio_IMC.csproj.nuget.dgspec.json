@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Serena\\Downloads\\EduSync\\Turma Lítio\\SPRINT2-DESAFIO-1\\Desafio_IMC\\Desafio_IMC\\Desafio_IMC.csproj": {}
+    "C:\\Users\\Serena\\Downloads\\EduSync\\Turma Lítio\\SPRINT2-DESAFIO-1\\Desafio_IMC\\Desafio_IMC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Serena\\Downloads\\EduSync\\Turma Lítio\\SPRINT2-DESAFIO-1\\Desafio_IMC\\Desafio_IMC\\Desafio_IMC.csproj": {
+    "C:\\Users\\Serena\\Downloads\\EduSync\\Turma Lítio\\SPRINT2-DESAFIO-1\\Desafio_IMC\\Desafio_IMC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Serena\\Downloads\\EduSync\\Turma Lítio\\SPRINT2-DESAFIO-1\\Desafio_IMC\\Desafio_IMC\\Desafio_IMC.csproj",
+        "projectUniqueName": "C:\\Users\\Serena\\Downloads\\EduSync\\Turma Lítio\\SPRINT2-DESAFIO-1\\Desafio_IMC\\Desafio_IMC.csproj",
         "projectName": "Desafio_IMC",
-        "projectPath": "C:\\Users\\Serena\\Downloads\\EduSync\\Turma Lítio\\SPRINT2-DESAFIO-1\\Desafio_IMC\\Desafio_IMC\\Desafio_IMC.csproj",
+        "projectPath": "C:\\Users\\Serena\\Downloads\\EduSync\\Turma Lítio\\SPRINT2-DESAFIO-1\\Desafio_IMC\\Desafio_IMC.csproj",
         "packagesPath": "C:\\Users\\Serena\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Serena\\Downloads\\EduSync\\Turma Lítio\\SPRINT2-DESAFIO-1\\Desafio_IMC\\Desafio_IMC\\obj\\",
+        "outputPath": "C:\\Users\\Serena\\Downloads\\EduSync\\Turma Lítio\\SPRINT2-DESAFIO-1\\Desafio_IMC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Serena\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -16,7 +16,7 @@ namespace Desafio_IMC
             bool opcaoEhValida = false;
             #endregion
 
-        inicio: //label indicado
+            inicio: //label indicado
 
             #region Cabeçalho do programa
             Console.WriteLine("\t\t********************************************************************");
@@ -82,7 +82,8 @@ namespace Desafio_IMC
             //Classificação IMC: Riscos
             if (imc < 20) {
                 Console.Write("\n\t\tRiscos: ");
-                Console.WriteLine("Muitas complicações de saúde como doenças pulmonares e cardiovasculares podem estar associadas ao baixo peso.");
+                Console.WriteLine("Muitas complicações de saúde como doenças pulmonares e" +
+                "\n\t\tcardiovasculares podem estar associadas ao baixo peso.");
             }
             else if (imc >= 20 && imc < 25) {
                 Console.Write("\n\t\tRiscos: ");
@@ -104,7 +105,8 @@ namespace Desafio_IMC
             //Classificação IMC: Recomendações
             if (imc < 20) {
                 Console.Write("\n\t\tRecomendação inicial: ");
-                Console.WriteLine("Inclua carboidratos simples em sua dieta, além de proteínas - indispensáveis para ganho de massa magra. Procure um profissional.");
+                Console.WriteLine("Inclua carboidratos simples em sua dieta, além de" +
+                "\n\t\tproteínas - indispensáveis para ganho de massa magra. Procure um profissional.");
             }
             else if (imc >= 20 && imc < 25) {
                 Console.Write("\n\t\tRecomendação inicial: ");
@@ -112,15 +114,18 @@ namespace Desafio_IMC
             }
             else if (imc >= 25 && imc < 30) {
                 Console.Write("\n\t\tRecomendação inicial: ");
-                Console.WriteLine("Adote um tratamento baseado em dieta balanceada, exercício físico e medicação. A ajuda de um profissional pode ser interessante.");
+                Console.WriteLine("Adote um tratamento baseado em dieta balanceada, exercício físico" +
+                "\n\t\te medicação. A ajuda de um profissional pode ser interessante.");
             }
             else if (imc >= 30 && imc < 35) {
                 Console.Write("\n\t\tRecomendação inicial: ");
-                Console.WriteLine("Adote uma dieta alimentar rigorosa, com o acompanhamento de um nutricionista e um médico especialista (endócrino).");
+                Console.WriteLine("Adote uma dieta alimentar rigorosa, com o acompanhamento" +
+                "\n\t\tde um nutricionista e um médico especialista (endócrino).");
             }
             else {
                 Console.Write("\n\t\tRecomendação inicial: ");
-                Console.WriteLine("Procure com urgência o acompanhamento de um nutricionista para realizar reeducação alimentar, um psicólogo e um médico especialista (endócrino).");
+                Console.WriteLine("Procure com urgência o acompanhamento de um nutricionista para realizar" +
+                "\n\t\treeducação alimentar, um psicólogo e um médico especialista (endócrino).");
             }
             
             do
@@ -150,7 +155,7 @@ namespace Desafio_IMC
         #region Método VerificaNome
         static string VerificaNome(string msg) //Método criado para fazer a leitura do nome do usuário
         {
-            string nomeInformado = ""; //declaração de variável que vai receber o nome do usuário
+            string nomeInformado = ""; 
             do
             {
                 Console.Write(msg); //Mostra a mensagem no console pedindo para o usuário informar o nome
@@ -163,8 +168,8 @@ namespace Desafio_IMC
         #region Método VerificaSexo
         static string VerificaSexo(string msg) //Método criado para fazer a leitura do sexo do usuário
         {
-            bool sexoEhValido = false; //declaração de variável para validar o sexo do usuário
-            string sexoInformado = ""; //declaração de variável para receber o sexo informado pelo usuário
+            bool sexoEhValido = false; 
+            string sexoInformado = ""; 
             do
             {
                 Console.Write(msg); //Mostra a mensagem no console pedindo para o usuário informar o sexo
@@ -188,8 +193,8 @@ namespace Desafio_IMC
         #region Método VerificaIdade
         static int VerificaIdade(string msg) //Método criado para ler a idade do usuário e verificar se é um valor válido
         {
-            bool idadeEhvalida = false; //declaração de variável para validar a idade
-            int ValidaIdadeInformada = 0; //declaração de variável para receber o valor informado pelo usuário
+            bool idadeEhvalida = false; 
+            int ValidaIdadeInformada = 0; 
             do
             {
                 Console.Write(msg); //Mostra a mensagem no console pedindo para o usuário informar a idade
@@ -205,8 +210,8 @@ namespace Desafio_IMC
         #region Método VerificaAltura
         static double VerificaAltura(string msg) //Método criado para receber e validar a altura do usuário
         {
-            bool alturaEhvalida = false; //declaração de variável para validar a altura
-            double AlturaInformada = 0; //Variável que vai receber a altura do usuário
+            bool alturaEhvalida = false; 
+            double AlturaInformada = 0; 
             do
             {
                 Console.Write(msg); //Mostra a mensagem no console para o usuário informar a altura
@@ -224,8 +229,8 @@ namespace Desafio_IMC
         #region Método VerificaPeso
         static double VerificaPeso(string msg) //Método criado para ler e verificar se o valor informado pelo usuário é válido
         {
-            bool pesoEhValido = false; //variável criada para ser usada na validação do peso do usuário
-            double pesoInformado = 0; //variável que vai receber o peso informado
+            bool pesoEhValido = false; 
+            double pesoInformado = 0; 
             do
             {
                 Console.Write(msg); //Mostra a mensagem no console 
